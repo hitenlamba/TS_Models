@@ -20,7 +20,7 @@ else
     bs=256
 fi  
 python run.py \
-    --root_path ./datasets/weather/ \
+    --root_path ./weather/ \
     --data_path weather.csv \
     --is_training 1 \
     --task_name long_term_forecast \
@@ -72,7 +72,7 @@ do
 for bs in $bss;
 do
 python run.py \
-    --root_path ./datasets/weather/ \
+    --root_path ./testdata/weather/ \
     --data_path weather.csv \
     --is_training 1 \
     --task_name long_term_forecast \
